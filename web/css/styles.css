@@ -1,0 +1,67 @@
+@CHARSET "ISO-8859-1";
+
+/* Global Layout
+================================= */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.bayes-title {
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: 3px;
+	margin-bottom: 25px;
+}
+
+.bayes-subtitle,
+.main-subtitle {
+	color: #05487F;
+	margin-bottom: 35px;
+	letter-spacing: 4px;
+}
+
+.main-subtitle {
+	padding-top: 60px;
+}
+
+.errors	{
+	color: #aa0000;
+	font-style: italic;
+	font-size: 0.75em;
+	list-style: none;
+}
+
+/* Links
+================================= */
+a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #A52A2A;
+}
+
+
+/* Images
+================================= */
+img {
+	max-width: 100%;
+}
+
+.bayes-logo {
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+.main-logo {
+	margin-top: 70px;
+	margin-bottom: 15px;
+}
