@@ -86,7 +86,7 @@
 								 		date = new Date(time);
 								 		out.println("<tr><td>" + files + "</td>");
 								 		out.println("<td>" + DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT).format(date) + "</td>");
-								 		out.println("<td><a href=\"downloadServlet?path=" + path + "&file=" + files + "\">Download</a> | <a href=\"deleteFile.jsp?path=" + path + File.separator + files + "\">Delete</a></td></tr>");
+								 		out.println("<td><a href=\"downloadServlet?path=" + path + "&file=" + files + "\">Download</a> | <a href=\"deleteFile.jsp?page=manageFiles.jsp&path=" + path + File.separator + files + "\">Delete</a></td></tr>");
 								    }
 								}
 			          		%>

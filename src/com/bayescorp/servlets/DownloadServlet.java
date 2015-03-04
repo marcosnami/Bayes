@@ -22,8 +22,8 @@ public class DownloadServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();  
 		String filename = request.getParameter("file");   
 		String filepath = request.getParameter("path");
-		System.out.println(filename);
-		System.out.println(filepath);
+		//System.out.println(filename);
+		//System.out.println(filepath);
 		response.setContentType("APPLICATION/OCTET-STREAM");   
 		response.setHeader("Content-Disposition","attachment; filename=\"" + filename + "\"");   
   

@@ -4,6 +4,7 @@
 	String username = (String)session.getAttribute("username");
 	String password = (String)session.getAttribute("password");
 	String path = request.getParameter("path");
+	String pages = request.getParameter("page");
 	//System.out.println("Username: " + username + " Password: " + password);
 	//System.out.println("Path: " + path);
 	
@@ -18,6 +19,6 @@
 		System.out.println(e.getMessage());
 	}
 	
-	response.sendRedirect("manageFiles.jsp");
+	response.sendRedirect(pages);
 	
 %>

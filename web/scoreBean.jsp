@@ -33,8 +33,7 @@
 		       	session.setAttribute("error", "Please, you must select an output type.");
 		       	response.sendRedirect("score.jsp");
 			} else if (score.score()) {
-				session.setAttribute("error", "You file was successfully scored");
-		       	response.sendRedirect("score.jsp");
+		       	response.sendRedirect("result.jsp");
 			} else {
 				session.setAttribute("error", "You file has not the right format");
 		       	response.sendRedirect("score.jsp");

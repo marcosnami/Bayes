@@ -59,7 +59,7 @@
       	// Now set the actual message
       	message.setText("Hello " + username + ", \n\n" + 
       		"Please to activate your account, click on the link below: \n" +
-			"http://www.bayescorp.com/BayesDev-0.1-dev/activate.jsp?email=" + email + "&emailCode=" + emailCode + "\n\n" +
+			"http://www.bayescorp.com" + BASE_URL + "activate.jsp?email=" + email + "&emailCode=" + emailCode + "\n\n" +
       		"Regards. \n\n" +
 			"Bayescorp");
       	// Send message

@@ -17,7 +17,7 @@
         		<ul class="nav navbar-nav navbar-right">
 		          	<li><a href="home.jsp">Intro</a></li>
 		          	<li><a href="score.jsp">Score Files</a></li>
-		          	<li><a href="#">See Results</a></li>
+		          	<li><a href="result.jsp">See Results</a></li>
 		          	<li><a href="manageFiles.jsp">Manage Files</a></li>
 		          	<li><a href="changePassword.jsp">Change Password</a></li>
 		          	<li><a href="logout.jsp">Logout</a></li>

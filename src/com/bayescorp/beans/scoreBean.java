@@ -50,8 +50,8 @@ public class scoreBean extends loginBean implements Serializable {
         // Get file path
         String uploadFile = UploadServlet.getDirectory(getUsername()) + File.separator + getFileName();
         String downloadFile = UploadServlet.getDownDirectory(getUsername()) + File.separator + "Scored_" + getFileName();
-        System.out.println("File Path: " + uploadFile);
-        System.out.println("Result Path: " + downloadFile);
+        //System.out.println("File Path: " + uploadFile);
+        //System.out.println("Result Path: " + downloadFile);
         String record = null;
     	try {
     		BufferedReader br = new BufferedReader(new FileReader(uploadFile));
