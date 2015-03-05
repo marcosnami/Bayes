@@ -99,6 +99,10 @@
 					<br><br><p class="text-center">There are not files to be displayed.</p>	
 				<%
 				}
+			} else {
+			%>
+				<br><br><p class="text-center">There are not files to be displayed.</p>	
+			<%
 			}
 			%>
 	</div>
