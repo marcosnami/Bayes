@@ -1,5 +1,6 @@
 package com.bayescorp.servlets;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -26,7 +27,7 @@ public class DownloadServlet extends HttpServlet {
 		response.setContentType("APPLICATION/OCTET-STREAM");   
 		response.setHeader("Content-Disposition","attachment; filename=\"" + filename + "\"");   
   
-		FileInputStream fileInputStream = new FileInputStream(filepath + "\\" + filename);  
+		FileInputStream fileInputStream = new FileInputStream(filepath + File.separator + filename);  
             
 		int i;   
 		while ((i = fileInputStream.read()) != -1) {  
