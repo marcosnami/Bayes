@@ -67,6 +67,9 @@
 		       	session.setAttribute("error", "Sorry, there was a problem registering your account.");
 		       	response.sendRedirect("register.jsp");
 			}
+		} else {
+			session.setAttribute("error", "Your browser\'s session has expired. Try register again.");
+			response.sendRedirect("register.jsp");
 		}
 	} else {
 		response.sendRedirect("logout.jsp");

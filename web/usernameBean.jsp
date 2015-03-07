@@ -22,6 +22,9 @@
 				session.setAttribute("username", username.getUsername());
 		       	response.sendRedirect("successUsername.jsp");
 			}
+		} else {
+			session.setAttribute("error", "Your browser\'s session has expired. Try again.");
+			response.sendRedirect("username.jsp");
 		}
 	} else {
 		response.sendRedirect("logout.jsp");

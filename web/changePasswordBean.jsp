@@ -50,6 +50,9 @@
 				session.setAttribute("password", change.getNewPassword());
 		       	response.sendRedirect("successChangePassword.jsp");
 			}
+		} else {
+			session.setAttribute("error", "Your browser\'s session has expired. Try login again.");
+			response.sendRedirect("login.jsp");
 		}
 	} else {
 		response.sendRedirect("logout.jsp");

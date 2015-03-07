@@ -28,6 +28,9 @@
 				session.setAttribute("password", password.getPassword());
 		       	response.sendRedirect("successPassword.jsp");
 			}
+		} else {
+			session.setAttribute("error", "Your browser\'s session has expired. Try again.");
+			response.sendRedirect("password.jsp");
 		}
 	} else {
 		response.sendRedirect("logout.jsp");

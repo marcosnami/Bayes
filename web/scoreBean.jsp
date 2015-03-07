@@ -38,6 +38,9 @@
 				session.setAttribute("error", "You file has not the right format");
 		       	response.sendRedirect("score.jsp");
 			}
+		} else {
+			session.setAttribute("error", "Your browser\'s session has expired. Try login again.");
+			response.sendRedirect("login.jsp");
 		}
 	} else {
 		response.sendRedirect("logout.jsp");
